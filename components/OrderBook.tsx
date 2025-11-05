@@ -76,7 +76,7 @@ export default function OrderBook() {
                         size="small"
                         pagination={false}
                         dataSource={bidRows}
-                        columns={bidColumns}
+                        columns={bidColumns as any}
                         rowKey="key"
                         rowClassName={() => 'depth-row'}
                         showHeader
@@ -109,7 +109,7 @@ export default function OrderBook() {
                         size="small"
                         pagination={false}
                         dataSource={askRows}
-                        columns={askColumns}
+                        columns={askColumns as any}
                         rowKey="key"
                         rowClassName={() => 'depth-row'}
                         showHeader
